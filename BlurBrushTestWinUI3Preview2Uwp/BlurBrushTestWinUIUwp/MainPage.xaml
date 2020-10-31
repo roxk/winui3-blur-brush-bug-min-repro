@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="BlurBrushTestWinUIUwp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BlurBrushTestWinUIUwp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ScrollViewer x:Name="scroller">
+        <Grid x:Name="image" Width="2000" Height="2000" Loaded="image_Loaded">
+            <Image Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Image.Source>
+                    <BitmapImage UriSource="https://docs.microsoft.com/en-us/windows/apps/winui/winui3/images/winui-projects-csharp.png"/>
+                </Image.Source>
+            </Image>
+        </Grid>
+    </ScrollViewer>
+</Page>
